@@ -24,7 +24,7 @@ const makeCommit = async (n) => {
   for (let i = 0; i < n; i++) {
     const randomWeeks = random.int(0, 54 * 4);
     const randomDays = random.int(0, 6);
-    const randomDate = moment("2021-01-01")
+    const randomDate = moment("2024-01-01")
       .add(randomWeeks, "weeks")
       .add(randomDays, "days");
     if (isValidDate(randomDate)) {
